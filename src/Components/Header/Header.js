@@ -5,6 +5,7 @@ import Bars from '../../assets/bars.png'
 
 import { Link } from 'react-scroll'
 
+
 const Header = () => {
 
 
@@ -18,9 +19,7 @@ const Header = () => {
                 <div
                     style={{ backgroundColor: 'var(--appColor)', padding: '0.5rem', borderRadius: '5px' }}
                 ><img src={Bars} alt="" style={{ width: '1.5rem', height: '1.5rem' }}
-                    onClick={() => {
-                        setMenuOpened(true)
-                    }}
+                    onClick={() => { setMenuOpened(true) }}
 
 
                     />
@@ -63,12 +62,6 @@ const Header = () => {
                         spy={true}
                         smooth={true}
                     >Testimonials</Link></li>
-                    <li ><Link
-                        onClick={() => setMenuOpened(false)}
-                        to='FORM'
-                        spy={true}
-                        smooth={true}
-                    >Contact Us</Link></li>
                 </ul>
             }
 

@@ -59,6 +59,8 @@
 .category:hover{
     background: rgb(133,133,192);
     cursor: pointer;
+    padding: 4rem;
+    border-radius: 2rem;
 }
 
 @media screen and (max-width:768px) {

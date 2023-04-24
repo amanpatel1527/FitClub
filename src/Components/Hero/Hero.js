@@ -8,10 +8,11 @@ import Calories from "../../assets/calories.png"
 import NumberCounter from 'number-counter';
 import { motion } from 'framer-motion'
 
+
 const Hero = () => {
 
     const transition = { type: 'spring', duration: 3 }
-    const mobile = window.innerWidth<=768 ? true:  false;
+    const mobile = window.innerWidth <= 768 ? true : false;
     return (
         <div className="hero" id='hero'>
             <div className="blur hero-blur"></div>
@@ -19,7 +20,7 @@ const Hero = () => {
                 <Header />
                 <div className="the-best-ad">
                     <motion.div
-                        initial={{ left: mobile?"165px":"238px" }}
+                        initial={{ left: mobile ? "165px" : "238px" }}
                         whileInView={{ left: '8px' }}
                         transition={{ ...transition, type: 'tween' }}
                     ></motion.div>
@@ -48,17 +49,17 @@ const Hero = () => {
                 <div className="figures">
                     <div>
                         <span>
-                        <NumberCounter end={140} start={60} delay='4' preFix="+"/>
-                        
+                            <NumberCounter end={140} start={60} delay='4' preFix="+" />
+
                         </span>
                         <span>expert Coaches</span>
                     </div>
                     <div>
-                        <span><NumberCounter end={978} start={750} delay='4' preFix="+"/></span>
+                        <span><NumberCounter end={978} start={750} delay='4' preFix="+" /></span>
                         <span>members joined</span>
                     </div>
                     <div>
-                        <span><NumberCounter end={50} start={0} delay='4' preFix="+"/></span>
+                        <span><NumberCounter end={50} start={0} delay='4' preFix="+" /></span>
                         <span>fitness programs</span>
                     </div>
                 </div>
@@ -73,7 +74,8 @@ const Hero = () => {
                 </div>
             </div>
             <div className="right-h">
-                <button className='btn'>Join Now</button>
+            <button className='btn'>Join Now</button>
+            
 
 
 
@@ -95,11 +97,11 @@ const Hero = () => {
 
                 <img src={hero_image} alt="" className='hero-image' />
                 <motion.img
-                initial={{right:'11rem'}}
-                whileInView={{right:'23rem'}}
-                transition={transition}
-                
-                src={hero_image_back} alt="" className='hero-image-back' />
+                    initial={{ right: '11rem' }}
+                    whileInView={{ right: '23rem' }}
+                    transition={transition}
+
+                    src={hero_image_back} alt="" className='hero-image-back' />
                 <img src="" alt="" />
 
 
@@ -127,3 +129,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+

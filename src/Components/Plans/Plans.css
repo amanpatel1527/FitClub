@@ -49,6 +49,8 @@ font-size: 0.8rem;
 }
 .plan:hover{
     background-color: violet;
+    padding: 4rem;
+    border-radius: 2rem ;
 }
 .plan:nth-child(2):hover{
     background-color: gray;
